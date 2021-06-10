@@ -6,3 +6,5 @@ print(second_number)
 total = first_number + second_number
 
 print(total)
+
+
