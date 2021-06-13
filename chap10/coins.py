@@ -17,7 +17,6 @@ class Pound:
         self.thickness = 3.15 #mm
         self.heads = True 
 
-
 #this a a distractor delets the object by running the distractor. 
     def __def__(self):
         print("Coin Spent!")
