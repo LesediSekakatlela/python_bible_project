@@ -1,3 +1,5 @@
+#part 1
+
 #A class is a template
 class Pound:
 
@@ -26,3 +28,4 @@ print(coin1.value)
 
 print(coin2.value)
 
+#part 2
