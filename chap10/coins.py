@@ -2,6 +2,7 @@
 #class is a templates
 class Pound:
 
+	
 	value = 1.00
 	colour = "gold"
 	num_edges = 1
