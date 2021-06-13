@@ -1,3 +1,14 @@
+#using a forloop using range
+#range(1,11)
+for p in range(1,11):
+    print(p)
+
+#increment the sequence
+for t in range(2,20,3):
+    print(t)
+
+
+#using a forloop with dictionaries
 students = {
     "male": ["Tom", "Charlie", "Harry", "Frank"],
     "female":["Sarah", "Huda", "Samantha", "Emily", "Elizabeth"]

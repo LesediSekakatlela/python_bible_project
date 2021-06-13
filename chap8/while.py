@@ -15,9 +15,16 @@ while number <= 10:
 #prints out the number 11
 print(number)
 
+#how to only get even == or odd != numbers 
+number = 1
+
+while number <= 10:
+    if number%2 != 0:
+        print(number)
+    number = number + 1
 
 
-   
+#using lists  
 L = []
 
 while len(L) < 5:
