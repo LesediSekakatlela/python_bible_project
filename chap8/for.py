@@ -8,7 +8,7 @@ for t in range(2,20,3):
     print(t)
 
 
-#using a forloop with dictionaries
+
 students = {
     "male": ["Tom", "Charlie", "Harry", "Frank"],
     "female":["Sarah", "Huda", "Samantha", "Emily", "Elizabeth"]
