@@ -1,46 +1,55 @@
 import random
 
 
-class Pound:
-    def __init__(self, rare=False):
+class Coin:
+    def __init__(self, rare =False,clean = True,heads = True,**kwargs):
 
-        self.rare = rare
+        for key,value in kwargs.items():
+            setattr(self,key,value)
 
-        if self.rare:
-            self.value = 1.25
+
+
+
+        self.is_rare = rare
+        self.is_clean = clean
+        self.heads = head
+
+        if self.is_rare:
+            self.value = self.original_value * 1.25
         else:
-            self.value = 1.00
+            self.value =self.original_value
 
-        self.colour = "gold"
-        self.num_edges = 1
-        self.diameter = 22.5 #mm
-        self.thickness = 3.15 #mm
-        self.heads = True 
-
-#this a a distractor delets the object by running the distractor. 
-    def __def__(self):
-        print("Coin Spent!")
-
+        if self.is_clean:
+            self.colour = self.clean_colour
+        else:
+            self.colour = self.rusty_colour
 
     def rust(self):
-         self.colour = "greenish"
+        self.colour = self.rusty_colour
 
     def clean(self):
-        self.color = "gold"
+        self.color = self.clean_colour
+
+    def __def__(self):
+        print("Coin Spent!")
 
     def flip(self):
         heads_options =[True,False]
         choice = random.choice(heads_options)
         self.heads = choice
 
+#working with dic
+class Pound(Coin):
+    def __init__(self):
+        data = {
+        "original_value": 1.00,
+        "clean_colour": "gold",
+        "rusty_colour": "greenish",
+        "num_edges": 1,
+        "diameter": 22.5,
+        "thickness": 3.15,
+        "mass": 9.5
+        }
 
-
-    
-
-
-
-
-  
-
-
-    
+    #parentclass.unpacking the data(**data)
+        super().__init__(**data)
