@@ -34,3 +34,11 @@ word = "supercalifragilisticexpialidocious"
 
 x = word.index("cali")
 print(x)
+
+#upper() and lower() case
+
+a = "Hello, World!"
+print(a.upper())
+
+a = "Hello,World!"
+print(a.lower())
